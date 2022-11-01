@@ -1,3 +1,8 @@
+/*!
+ * \file data_hiding.cpp
+ * \brief All fields are public by default on structs.
+ */
+
 #include <iostream>
 #include <cstring>
 
