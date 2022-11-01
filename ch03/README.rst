@@ -56,3 +56,16 @@ copied, pointers to those arguments, or references:
           std::string str("hello");
           by_reference(str);         // str is not altered
       }
+
+Note 2: Avoiding the copy operation
+-----------------------------------
+
+References play an important role in cases where the argument is not changed by
+the function but where it is undesirable to copy the argument to initialize the
+parameter.  Such a situation occurs when a large object is passed as argument,
+or is returned by the function.  In these cases the copying operation tends to
+become a significant factor, as the entire object must be copied.  In these
+cases references are preferred.
+
+If the argument isn't modified by the function, or if the caller shouldn't
+modify the returned information, the `const` keyword should be used.
