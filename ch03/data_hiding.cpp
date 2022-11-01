@@ -8,9 +8,11 @@
 
 struct Person {
     private:
+        // No one can access data in this section except itself.
         char d_name[80];
         char d_address[80];
     public:
+        // Those are interface functions (members).
         void setName(char const *n);
         void setAddress(char const *a);
         void print();
