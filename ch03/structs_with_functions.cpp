@@ -2,25 +2,25 @@
 #include <cstring>
 
 struct Person {
-	char name[80];
-	char address[80];
+    char name[80];
+    char address[80];
 
-	void print();
+    void print();
 };
 
 void Person::print()
 {
-	std::cout << "Name:    " << name << "\n"
-		     "Address: " << address << '\n';
+    std::cout << "Name:    " << name << "\n"
+                 "Address: " << address << '\n';
 }
 
 int main()
 {
-	Person person;
+    Person person;
 
-	strcpy(person.name, "Pedro Guilherme");
-	strcpy(person.address, "Rua Dr. Ruy Vicente de Mello");
-	person.print();
+    strcpy(person.name, "Pedro Guilherme");
+    strcpy(person.address, "Rua Dr. Ruy Vicente de Mello");
+    person.print();
 
-	return 0;
+    return 0;
 }
