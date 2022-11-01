@@ -45,8 +45,6 @@ int main()
 {
 	Person person;
 
-	std::cout << person.d_name << std::endl;
-
 	person.setName("Pedro Moreira");
 	person.setAddress("Brasília-DF");
 
