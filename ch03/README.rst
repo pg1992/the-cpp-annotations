@@ -69,3 +69,13 @@ cases references are preferred.
 
 If the argument isn't modified by the function, or if the caller shouldn't
 modify the returned information, the `const` keyword should be used.
+
+Note 3: Why Rvalue References were created?
+-------------------------------------------
+
+Rvalue references were added to the language in order to be able to distinguish
+the two forms of references: named values (for which lvalue references are
+used) and anonymous values (for which rvalue references are used).
+
+It is this distinction that allows the implementation of *move semantics* and
+*perfect forwarding*.

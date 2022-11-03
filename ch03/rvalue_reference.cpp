@@ -6,6 +6,7 @@ int intVal()
 }
 
 void receive(int &value) // receive a named var
+                         // compiler gets confused if there was are receive(int)
 {
     std::cout << "int value parameter\n";
 }
